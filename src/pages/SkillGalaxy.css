@@ -1,0 +1,474 @@
+/* =========================
+   SKILL GALAXY PAGE
+========================= */
+
+.galaxy-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.galaxy-header {
+  margin-bottom: 25px;
+}
+
+.galaxy-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.galaxy-header > p:last-child {
+  color: #777f8f;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+
+/* =========================
+   GALAXY
+========================= */
+
+.galaxy-card {
+  height: 390px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(124, 77, 255, 0.35),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(83, 109, 254, 0.35),
+      transparent 25%
+    ),
+    #11152d;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 15px 40px rgba(40, 45, 100, 0.2);
+}
+
+
+/* STARS */
+
+.galaxy-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      white 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+
+  opacity: 0.35;
+}
+
+
+/* ORBITS */
+
+.galaxy-orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.orbit-one {
+  width: 150px;
+  height: 150px;
+  transform: rotate(-20deg);
+}
+
+.orbit-two {
+  width: 230px;
+  height: 230px;
+  transform: rotate(65deg);
+}
+
+.orbit-three {
+  width: 310px;
+  height: 310px;
+  transform: rotate(150deg);
+}
+
+.orbit-four {
+  width: 370px;
+  height: 370px;
+  transform: rotate(220deg);
+}
+
+
+/* PLANETS */
+
+.planet {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(8px);
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+
+/* CENTER */
+
+.galaxy-core {
+  position: relative;
+  z-index: 5;
+
+  width: 135px;
+  height: 135px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #8b9cff,
+      #536dfe 45%,
+      #4532a3
+    );
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  box-shadow:
+    0 0 45px rgba(83, 109, 254, 0.7);
+}
+
+.galaxy-core strong {
+  font-size: 30px;
+}
+
+.galaxy-core span {
+  font-size: 11px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.galaxy-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+.galaxy-summary > div {
+  background: white;
+  padding: 18px 10px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.galaxy-summary span {
+  display: block;
+  font-size: 23px;
+}
+
+.galaxy-summary strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+.galaxy-summary small {
+  display: block;
+  margin-top: 4px;
+
+  color: #858b98;
+  font-size: 10px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+  margin-top: 28px;
+}
+
+.skills-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.skills-heading h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.skills-heading span {
+  color: #858b98;
+  font-size: 11px;
+}
+
+
+/* SKILL CARD */
+
+.skills-list {
+  display: grid;
+  gap: 12px;
+}
+
+.skill-card {
+  background: white;
+  padding: 18px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-icon {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 13px;
+
+  background: #eef1ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.skill-name strong {
+  display: block;
+  font-size: 15px;
+}
+
+.skill-name small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #858b98;
+  font-size: 11px;
+}
+
+.skill-score {
+  font-size: 18px;
+}
+
+
+/* PROGRESS */
+
+.skill-bar {
+  height: 8px;
+
+  background: #edf0f6;
+
+  border-radius: 20px;
+
+  margin-top: 16px;
+
+  overflow: hidden;
+}
+
+.skill-bar div {
+  height: 100%;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #536dfe,
+      #7c4dff
+    );
+
+  transition: width 0.5s ease;
+}
+
+
+/* FOOTER */
+
+.skill-footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  color: #8a909d;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   AI INSIGHT
+========================= */
+
+.galaxy-ai {
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background: #eef1ff;
+
+  display: flex;
+
+  gap: 13px;
+}
+
+.galaxy-ai > span {
+  font-size: 27px;
+}
+
+.galaxy-ai strong {
+  font-size: 14px;
+}
+
+.galaxy-ai p {
+  margin: 6px 0 0;
+
+  color: #5e6678;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.galaxy-footer {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #9298a4;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .galaxy-page {
+    padding: 20px 16px 110px;
+  }
+
+  .galaxy-header h1 {
+    font-size: 24px;
+  }
+
+  .galaxy-card {
+    height: 330px;
+  }
+
+  .orbit-one {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit-two {
+    width: 190px;
+    height: 190px;
+  }
+
+  .orbit-three {
+    width: 260px;
+    height: 260px;
+  }
+
+  .orbit-four {
+    width: 310px;
+    height: 310px;
+  }
+
+  .planet {
+    width: 48px;
+    height: 48px;
+    font-size: 21px;
+  }
+
+  .galaxy-core {
+    width: 115px;
+    height: 115px;
+  }
+
+  .galaxy-core strong {
+    font-size: 25px;
+  }
+
+  .galaxy-summary {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,427 @@
+/* =========================
+   ACHIEVEMENTS PAGE
+========================= */
+
+.achievements-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.achievements-header {
+  margin-bottom: 25px;
+}
+
+.achievements-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.achievements-header > p:last-child {
+  color: #777f8f;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+
+/* =========================
+   LEVEL CARD
+========================= */
+
+.level-card {
+  background:
+    linear-gradient(
+      135deg,
+      #536dfe,
+      #7c4dff
+    );
+
+  color: white;
+
+  border-radius: 25px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 12px 35px
+    rgba(83, 109, 254, 0.22);
+}
+
+
+.level-top {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+
+.level-badge {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 17px;
+
+  background:
+    rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+
+.level-top span {
+  display: block;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.75;
+}
+
+
+.level-top h2 {
+  margin: 4px 0 0;
+
+  font-size: 22px;
+}
+
+
+.level-top > strong {
+  margin-left: auto;
+
+  font-size: 18px;
+}
+
+
+/* XP BAR */
+
+.xp-bar {
+  height: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-top: 25px;
+}
+
+
+.xp-bar div {
+  height: 100%;
+
+  border-radius: 20px;
+
+  background: white;
+
+  transition: width 0.5s ease;
+}
+
+
+.xp-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  font-size: 10px;
+
+  opacity: 0.8;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.achievement-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+
+.achievement-stats > div {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 18px 10px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+
+.achievement-stats strong {
+  display: block;
+
+  font-size: 22px;
+}
+
+
+.achievement-stats span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #858b98;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   BADGES
+========================= */
+
+.badges-section {
+  margin-top: 28px;
+}
+
+
+.badges-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+
+.badges-heading h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+
+.badges-heading span {
+  color: #858b98;
+
+  font-size: 12px;
+}
+
+
+.badges-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+
+/* BADGE CARD */
+
+.badge-card {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 20px 14px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.badge-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.07);
+}
+
+
+.badge-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 31px;
+}
+
+
+.unlocked .badge-icon {
+  background: #eef1ff;
+}
+
+
+.locked {
+  opacity: 0.55;
+}
+
+
+.locked .badge-icon {
+  background: #f0f1f4;
+}
+
+
+.badge-card h3 {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+
+.badge-card p {
+  margin: 7px 0 12px;
+
+  color: #777f8f;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+.badge-status {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 8px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.5px;
+}
+
+
+.unlocked .badge-status {
+  background: #eaf8ef;
+
+  color: #238044;
+}
+
+
+.locked .badge-status {
+  background: #f0f1f4;
+
+  color: #858b98;
+}
+
+
+/* =========================
+   AI MOTIVATION
+========================= */
+
+.achievement-ai {
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background: #eef1ff;
+
+  display: flex;
+
+  gap: 13px;
+}
+
+
+.achievement-ai > span {
+  font-size: 27px;
+}
+
+
+.achievement-ai strong {
+  font-size: 14px;
+}
+
+
+.achievement-ai p {
+  margin: 6px 0 0;
+
+  color: #5e6678;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .achievements-page {
+    padding: 20px 16px 110px;
+  }
+
+  .achievements-header h1 {
+    font-size: 24px;
+  }
+
+  .achievement-stats {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .badges-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .level-top > strong {
+    font-size: 15px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .badges-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

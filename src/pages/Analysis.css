@@ -1,0 +1,477 @@
+.analysis-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.analysis-header {
+  margin-bottom: 25px;
+}
+
+.analysis-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.page-label {
+  color: #7b8190;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.analysis-subtitle {
+  color: #777f8f;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+
+/* =========================
+   EMPTY ANALYSIS
+========================= */
+
+.empty-analysis {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.empty-analysis h2 {
+  margin: 10px 0;
+}
+
+.empty-analysis > p {
+  color: #777f8f;
+  line-height: 1.5;
+  max-width: 500px;
+  margin: auto;
+}
+
+.empty-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.empty-info div {
+  background: #f5f7fb;
+  padding: 15px;
+  border-radius: 14px;
+  min-width: 150px;
+  font-size: 24px;
+}
+
+.empty-info span {
+  display: block;
+  font-size: 12px;
+  color: #777f8f;
+  margin-top: 5px;
+}
+
+
+/* =========================
+   OVERALL SCORE
+========================= */
+
+.overall-card {
+  background: #e9edff;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.overall-icon {
+  width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.overall-card span {
+  display: block;
+  color: #6d7484;
+  font-size: 13px;
+}
+
+.overall-card strong {
+  display: block;
+  font-size: 30px;
+  color: #536dfe;
+  margin-top: 3px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.summary-card {
+  background: white;
+  padding: 18px;
+  border-radius: 17px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.summary-card span {
+  display: block;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 23px;
+}
+
+.summary-card small {
+  display: block;
+  color: #777f8f;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.analysis-section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.section-title span {
+  color: #777f8f;
+  font-size: 13px;
+}
+
+
+/* =========================
+   WEAK TOPICS
+========================= */
+
+.weak-topic-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.topic-icon {
+  font-size: 25px;
+}
+
+.topic-details {
+  flex: 1;
+}
+
+.topic-details h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.topic-details p {
+  margin: 0 0 10px;
+  color: #777f8f;
+  font-size: 12px;
+}
+
+.analysis-progress {
+  height: 7px;
+  background: #e8eaf0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.analysis-progress div {
+  height: 100%;
+  background: #e05252;
+  border-radius: 20px;
+}
+
+.weak-topic-card > strong {
+  color: #e05252;
+}
+
+.no-weak-topics {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+
+/* =========================
+   STRENGTHS
+========================= */
+
+.strength-list {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.strength-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.strength-item:last-child {
+  border-bottom: none;
+}
+
+.strength-item > span {
+  font-size: 23px;
+}
+
+.strength-item div {
+  flex: 1;
+}
+
+.strength-item strong {
+  font-size: 14px;
+}
+
+.strength-item p {
+  margin: 3px 0 0;
+  color: #777f8f;
+  font-size: 12px;
+}
+
+
+/* =========================
+   PERFORMANCE
+========================= */
+
+.performance-list {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.performance-item {
+  display: grid;
+  grid-template-columns: 170px 1fr 45px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.performance-item:last-child {
+  margin-bottom: 0;
+}
+
+.performance-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.performance-name strong {
+  font-size: 13px;
+}
+
+.performance-bar {
+  height: 8px;
+  background: #e8eaf0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.performance-bar div {
+  height: 100%;
+  background: #536dfe;
+  border-radius: 20px;
+}
+
+
+/* =========================
+   RECOMMENDATION
+========================= */
+
+.recommendation-card {
+  background: #ffffff;
+  border-left: 5px solid #536dfe;
+  padding: 20px;
+  border-radius: 18px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.recommendation-icon {
+  font-size: 32px;
+}
+
+.recommendation-card p {
+  margin: 0 0 5px;
+  color: #536dfe;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.recommendation-card h2 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.recommendation-card span {
+  color: #777f8f;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   STUDY PLAN
+========================= */
+
+.study-plan {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.study-plan h2 {
+  margin-top: 0;
+  font-size: 19px;
+}
+
+.plan-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plan-item:last-child {
+  border-bottom: none;
+}
+
+.plan-item > span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e9edff;
+  color: #536dfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.plan-item strong {
+  font-size: 14px;
+}
+
+.plan-item p {
+  margin: 3px 0 0;
+  color: #777f8f;
+  font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .analysis-page {
+    padding: 20px 16px 110px;
+  }
+
+  .analysis-header h1 {
+    font-size: 23px;
+  }
+
+  .summary-grid {
+    gap: 8px;
+  }
+
+  .summary-card {
+    padding: 14px 8px;
+  }
+
+  .summary-card strong {
+    font-size: 20px;
+  }
+
+  .summary-card small {
+    font-size: 10px;
+  }
+
+  .performance-item {
+    grid-template-columns: 125px 1fr 40px;
+    gap: 8px;
+  }
+
+  .performance-name strong {
+    font-size: 11px;
+  }
+
+  .weak-topic-card {
+    padding: 15px;
+  }
+
+  .recommendation-card {
+    padding: 16px;
+  }
+
+  .empty-info {
+    flex-direction: column;
+  }
+
+  .empty-info div {
+    width: 100%;
+  }
+}

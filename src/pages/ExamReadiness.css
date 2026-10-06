@@ -1,0 +1,621 @@
+/* =========================
+   EXAM READINESS PAGE
+========================= */
+
+.exam-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.exam-header {
+  margin-bottom: 22px;
+}
+
+.exam-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.exam-header p:last-child {
+  color: #777f8f;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   SETTINGS
+========================= */
+
+.exam-settings {
+  background: white;
+  border-radius: 20px;
+  padding: 18px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.04);
+
+  margin-bottom: 18px;
+}
+
+.exam-settings label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #858b98;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.exam-settings select {
+  width: 100%;
+
+  border: 1px solid #e1e4eb;
+
+  background: #fafbfc;
+
+  border-radius: 12px;
+
+  padding: 11px;
+
+  outline: none;
+
+  color: #42495a;
+
+  font-size: 12px;
+}
+
+.exam-settings select:focus {
+  border-color: #536dfe;
+}
+
+
+/* =========================
+   READINESS CARD
+========================= */
+
+.readiness-card {
+  background:
+    linear-gradient(
+      135deg,
+      #536dfe,
+      #7c4dff
+    );
+
+  color: white;
+
+  border-radius: 25px;
+
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  box-shadow:
+    0 12px 35px
+    rgba(83, 109, 254, 0.22);
+
+  margin-bottom: 18px;
+}
+
+
+/* CIRCLE */
+
+.readiness-circle {
+  width: 145px;
+  height: 145px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      white 0deg,
+      white calc(var(--score, 0) * 3.6deg),
+      rgba(255,255,255,0.2)
+        calc(var(--score, 0) * 3.6deg),
+      rgba(255,255,255,0.2) 360deg
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.readiness-circle::before {
+  content: "";
+
+  position: absolute;
+
+  width: 116px;
+  height: 116px;
+
+  border-radius: 50%;
+
+  background: #5f61f2;
+}
+
+.readiness-circle > div {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+.readiness-circle strong {
+  display: block;
+
+  font-size: 31px;
+}
+
+.readiness-circle span {
+  font-size: 10px;
+
+  opacity: 0.8;
+}
+
+
+/* INFO */
+
+.readiness-info {
+  flex: 1;
+}
+
+.readiness-info .status {
+  font-size: 10px;
+
+  background:
+    rgba(255,255,255,0.16);
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+}
+
+.readiness-info h2 {
+  margin: 14px 0 5px;
+
+  font-size: 24px;
+}
+
+.readiness-info p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  opacity: 0.85;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.exam-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.exam-stats > div {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 18px 10px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+.exam-stats strong {
+  display: block;
+
+  font-size: 22px;
+}
+
+.exam-stats span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #858b98;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.exam-section {
+  margin-bottom: 20px;
+}
+
+.exam-section-title {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 13px;
+}
+
+.exam-section-title h2 {
+  margin: 0;
+
+  font-size: 19px;
+}
+
+.exam-section-title span {
+  color: #858b98;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   TOPIC READINESS
+========================= */
+
+.topic-readiness-list {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+.topic-readiness {
+  margin-bottom: 17px;
+}
+
+.topic-readiness:last-child {
+  margin-bottom: 0;
+}
+
+.topic-readiness-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+}
+
+.topic-readiness-top strong {
+  font-size: 13px;
+}
+
+.topic-readiness-top span {
+  font-size: 12px;
+
+  color: #536dfe;
+
+  font-weight: 700;
+}
+
+.topic-bar {
+  height: 8px;
+
+  background: #eef0f5;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.topic-bar div {
+  height: 100%;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #536dfe,
+      #8b6cff
+    );
+
+  transition: width 0.5s ease;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.exam-empty {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 35px 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+.exam-empty span {
+  font-size: 38px;
+}
+
+.exam-empty h3 {
+  margin: 10px 0 5px;
+
+  font-size: 16px;
+}
+
+.exam-empty p {
+  margin: 0;
+
+  color: #858b98;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   RISK CARD
+========================= */
+
+.risk-card {
+  background: #fff7e8;
+
+  border: 1px solid #ffe4af;
+
+  border-radius: 20px;
+
+  padding: 18px;
+
+  display: flex;
+
+  gap: 13px;
+
+  margin-bottom: 15px;
+}
+
+.risk-icon {
+  width: 43px;
+  height: 43px;
+
+  flex-shrink: 0;
+
+  background: #ffe8b8;
+
+  border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.risk-card small {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  color: #a56a00;
+
+  letter-spacing: 1px;
+}
+
+.risk-card h3 {
+  margin: 4px 0;
+
+  font-size: 16px;
+}
+
+.risk-card p {
+  margin: 0;
+
+  color: #806a45;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   AI STRATEGY
+========================= */
+
+.exam-ai {
+  background: #eef1ff;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  display: flex;
+
+  gap: 13px;
+
+  margin-bottom: 15px;
+}
+
+.exam-ai-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.exam-ai strong {
+  font-size: 14px;
+}
+
+.exam-ai p {
+  margin: 6px 0 0;
+
+  color: #5e6678;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-card {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  display: flex;
+
+  gap: 13px;
+
+  align-items: center;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+.countdown-card > span {
+  font-size: 27px;
+}
+
+.countdown-card strong {
+  font-size: 14px;
+}
+
+.countdown-card p {
+  margin: 5px 0 0;
+
+  color: #7c8390;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .exam-page {
+    padding: 20px 15px 110px;
+  }
+
+  .exam-header h1 {
+    font-size: 24px;
+  }
+
+  .exam-settings {
+    grid-template-columns: 1fr;
+  }
+
+  .readiness-card {
+    padding: 20px;
+
+    gap: 18px;
+  }
+
+  .readiness-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .readiness-circle::before {
+    width: 96px;
+    height: 96px;
+  }
+
+  .readiness-circle strong {
+    font-size: 25px;
+  }
+
+  .readiness-info h2 {
+    font-size: 20px;
+  }
+
+  .exam-stats {
+    gap: 8px;
+  }
+
+  .exam-stats > div {
+    padding: 15px 7px;
+  }
+
+  .exam-stats strong {
+    font-size: 18px;
+  }
+
+  .exam-stats span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .readiness-card {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .readiness-info {
+    width: 100%;
+  }
+
+}

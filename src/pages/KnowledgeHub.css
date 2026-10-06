@@ -1,0 +1,587 @@
+.knowledge-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.knowledge-header {
+  margin-bottom: 22px;
+}
+
+.knowledge-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.knowledge-header p:last-child {
+  color: #777f8f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.page-label {
+  color: #7b8190;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+
+/* Banner */
+
+.knowledge-banner {
+  background: #e9edff;
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.banner-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.knowledge-banner h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+
+.knowledge-banner p {
+  margin: 0;
+  color: #626a7a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Search */
+
+.search-box {
+  background: white;
+  border: 1px solid #e1e4ec;
+  border-radius: 14px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.search-box span {
+  font-size: 17px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 14px 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+
+/* Filters */
+
+.subject-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.subject-filters button {
+  border: 1px solid #dfe2ea;
+  background: white;
+  color: #666e7e;
+  padding: 8px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.subject-filters button:hover {
+  border-color: #536dfe;
+}
+
+.subject-filters .filter-active {
+  background: #536dfe;
+  color: white;
+  border-color: #536dfe;
+}
+
+.material-count {
+  color: #777f8f;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+
+/* Cards */
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.material-card {
+  border: none;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: 0.2s;
+}
+
+.material-card:hover {
+  transform: translateY(-3px);
+}
+
+.material-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.material-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: #f0f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.level-badge {
+  background: #f0f2ff;
+  color: #536dfe;
+  padding: 5px 9px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.material-subject {
+  color: #536dfe;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.material-card h3 {
+  margin: 6px 0;
+  color: #202532;
+  font-size: 17px;
+}
+
+.material-card p {
+  color: #777f8f;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.read-button {
+  margin-top: 15px;
+  color: #536dfe;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* Detail */
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #536dfe;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.material-detail {
+  background: white;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.material-detail-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #f0f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.material-detail h1 {
+  margin: 5px 0 10px;
+  font-size: 30px;
+}
+
+.material-description {
+  color: #697181;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 15px 0 25px;
+}
+
+
+/* Learning Sections */
+
+.learning-section {
+  margin-top: 30px;
+}
+
+.learning-section h2 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.explanation-box {
+  background: #f7f8fc;
+  border-radius: 15px;
+  padding: 18px;
+}
+
+.explanation-box p {
+  margin: 0 0 10px;
+  color: #4d5564;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.explanation-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Key Points */
+
+.concept-list {
+  display: grid;
+  gap: 10px;
+}
+
+.concept-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  background: #f7f8fc;
+  border-radius: 12px;
+}
+
+.concept-item span {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #536dfe;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.concept-item p {
+  margin: 2px 0;
+  color: #454c5a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Concepts */
+
+.concept-detail-list {
+  display: grid;
+  gap: 15px;
+}
+
+.concept-detail {
+  background: #f7f8fc;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.concept-detail h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.concept-detail p {
+  color: #697181;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* Code */
+
+.code-block,
+.concept-detail pre {
+  background: #1e2430;
+  color: #f4f5f7;
+  padding: 18px;
+  border-radius: 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.concept-detail pre {
+  margin-top: 12px;
+}
+
+
+/* Real World */
+
+.real-world-card {
+  background: #e9edff;
+  padding: 18px;
+  border-radius: 15px;
+  color: #4f5870;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* Mistakes */
+
+.mistakes-list {
+  display: grid;
+  gap: 10px;
+}
+
+.mistake-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #fff5e8;
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.mistake-item span {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #e99a3d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.mistake-item p {
+  margin: 0;
+  color: #655745;
+  font-size: 13px;
+}
+
+
+/* Interview */
+
+.interview-list {
+  display: grid;
+  gap: 12px;
+}
+
+.interview-card {
+  background: #f7f8fc;
+  padding: 17px;
+  border-radius: 14px;
+}
+
+.interview-card strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.interview-card p {
+  margin: 9px 0 0;
+  color: #697181;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* Quick Quiz */
+
+.quick-quiz {
+  display: grid;
+  gap: 18px;
+}
+
+.quick-question {
+  background: #f7f8fc;
+  padding: 18px;
+  border-radius: 15px;
+}
+
+.quick-question h3 {
+  margin: 0 0 13px;
+  font-size: 14px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 8px;
+}
+
+.quiz-options button {
+  border: 1px solid #dfe2ea;
+  background: white;
+  padding: 11px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.quiz-options button:hover {
+  border-color: #536dfe;
+}
+
+.quiz-options .correct-answer {
+  background: #e4f8ec;
+  border-color: #42a86b;
+  color: #257044;
+}
+
+.quiz-options .wrong-answer {
+  background: #ffe8e8;
+  border-color: #df6666;
+  color: #a03b3b;
+}
+
+
+/* Remember */
+
+.remember-card {
+  margin-top: 25px;
+  padding: 20px;
+  background: #fff6dc;
+  border-radius: 17px;
+  display: flex;
+  gap: 12px;
+}
+
+.remember-card > span {
+  font-size: 25px;
+}
+
+.remember-card strong {
+  font-size: 14px;
+}
+
+.remember-card p {
+  margin: 6px 0 0;
+  color: #665b3e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* StudyTwin */
+
+.knowledge-check {
+  margin-top: 18px;
+  padding: 20px;
+  background: #e9edff;
+  border-radius: 17px;
+  display: flex;
+  gap: 12px;
+}
+
+.knowledge-check > span {
+  font-size: 25px;
+}
+
+.knowledge-check strong {
+  font-size: 14px;
+}
+
+.knowledge-check p {
+  margin: 6px 0 0;
+  color: #626a7a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Empty */
+
+.no-results {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.no-results span {
+  font-size: 35px;
+}
+
+.no-results h3 {
+  margin-bottom: 5px;
+}
+
+.no-results p {
+  color: #777f8f;
+  font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .knowledge-page {
+    padding: 20px 16px 110px;
+  }
+
+  .knowledge-header h1 {
+    font-size: 23px;
+  }
+
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .material-detail {
+    padding: 20px;
+  }
+
+  .material-detail h1 {
+    font-size: 24px;
+  }
+
+  .knowledge-banner {
+    align-items: flex-start;
+  }
+
+}

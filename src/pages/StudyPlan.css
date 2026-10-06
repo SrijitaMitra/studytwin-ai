@@ -1,0 +1,427 @@
+.studyplan-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.studyplan-header {
+  margin-bottom: 25px;
+}
+
+.studyplan-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.studyplan-header p:last-child {
+  color: #777f8f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.page-label {
+  color: #7b8190;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+
+/* Daily Progress */
+
+.plan-greeting {
+  background: #e9edff;
+  padding: 22px;
+  border-radius: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plan-greeting-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.plan-progress-info {
+  flex: 1;
+}
+
+.plan-progress-info > span {
+  color: #536dfe;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.plan-progress-info h2 {
+  margin: 4px 0 8px;
+  font-size: 24px;
+}
+
+.daily-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.daily-progress-bar div {
+  height: 100%;
+  background: #536dfe;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.plan-progress-info p {
+  margin: 7px 0 0;
+  color: #626a7a;
+  font-size: 12px;
+}
+
+
+/* Focus */
+
+.focus-card {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.focus-icon {
+  width: 55px;
+  height: 55px;
+  background: #f0f2ff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  flex-shrink: 0;
+}
+
+.focus-card span {
+  color: #536dfe;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.focus-card h2 {
+  margin: 5px 0;
+  font-size: 19px;
+}
+
+.focus-card p {
+  margin: 0;
+  color: #777f8f;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Section */
+
+.plan-section {
+  margin-bottom: 25px;
+}
+
+.plan-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.plan-section-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.plan-section-header p {
+  margin: 5px 0 0;
+  color: #777f8f;
+  font-size: 12px;
+}
+
+.plan-section-header > span {
+  color: #536dfe;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* Plan List */
+
+.plan-list {
+  background: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.plan-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.plan-card:last-child {
+  border-bottom: none;
+}
+
+.plan-card.completed {
+  opacity: 0.6;
+}
+
+.plan-card.active-task {
+  background: #f7f8ff;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.plan-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #536dfe;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.plan-item-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 13px;
+  background: #f0f2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.plan-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.plan-type {
+  color: #536dfe;
+  font-size: 9px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.plan-item-content h3 {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.plan-item-content p {
+  margin: 0;
+  color: #777f8f;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* Timer */
+
+.timer {
+  margin-top: 8px;
+}
+
+.timer strong {
+  color: #536dfe;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* Right Side */
+
+.plan-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-time {
+  color: #536dfe;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plan-time small {
+  display: block;
+  color: #777f8f;
+  font-size: 9px;
+  font-weight: normal;
+}
+
+.plan-action > button {
+  border: none;
+  background: #536dfe;
+  color: white;
+  padding: 8px 11px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.plan-action > button:hover {
+  opacity: 0.9;
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.timer-buttons button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.pause-button {
+  background: #eee;
+}
+
+.complete-button {
+  background: #536dfe;
+  color: white;
+}
+
+
+/* Insight */
+
+.plan-insight {
+  background: #e9edff;
+  padding: 19px;
+  border-radius: 18px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.plan-insight > span {
+  font-size: 27px;
+}
+
+.plan-insight strong {
+  font-size: 14px;
+}
+
+.plan-insight p {
+  margin: 5px 0 0;
+  color: #626a7a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* Bottom Card */
+
+.plan-bottom-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.plan-bottom-card > div:first-child {
+  font-size: 28px;
+}
+
+.plan-bottom-card strong {
+  font-size: 14px;
+}
+
+.plan-bottom-card p {
+  margin: 5px 0 0;
+  color: #777f8f;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .studyplan-page {
+    padding: 20px 16px 110px;
+  }
+
+  .studyplan-header h1 {
+    font-size: 23px;
+  }
+
+  .plan-greeting {
+    padding: 18px;
+  }
+
+  .plan-greeting-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+  }
+
+  .plan-progress-info h2 {
+    font-size: 20px;
+  }
+
+  .plan-card {
+    gap: 8px;
+  }
+
+  .plan-number {
+    width: 24px;
+    height: 24px;
+  }
+
+  .plan-item-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+  }
+
+  .plan-time {
+    display: none;
+  }
+
+  .plan-action {
+    flex-shrink: 0;
+  }
+
+}

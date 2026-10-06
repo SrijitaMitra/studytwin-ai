@@ -1,0 +1,193 @@
+.profile-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px 20px 110px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.profile-header {
+  margin-bottom: 25px;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.profile-header p:last-child {
+  color: #777f8f;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.page-label {
+  color: #7b8190;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+
+/* Profile Card */
+
+.profile-card {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #e9edff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.profile-card h2 {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.profile-card p {
+  margin: 0;
+  color: #777f8f;
+  font-size: 13px;
+}
+
+
+/* Sections */
+
+.profile-section {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.profile-section h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+
+/* Fields */
+
+.profile-field {
+  margin-bottom: 18px;
+}
+
+.profile-field:last-child {
+  margin-bottom: 0;
+}
+
+.profile-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444b59;
+}
+
+.profile-field input,
+.profile-field select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dfe2ea;
+  border-radius: 11px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.profile-field input:focus,
+.profile-field select:focus {
+  border-color: #536dfe;
+}
+
+
+/* StudyTwin Card */
+
+.twin-profile-card {
+  background: #e9edff;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.twin-profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.twin-profile-card h3 {
+  margin: 0 0 7px;
+  font-size: 15px;
+}
+
+.twin-profile-card p {
+  margin: 0;
+  color: #626a7a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* Save Button */
+
+.save-profile-button {
+  width: 100%;
+  border: none;
+  background: #536dfe;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-profile-button:hover {
+  opacity: 0.9;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .profile-page {
+    padding: 20px 16px 110px;
+  }
+
+  .profile-header h1 {
+    font-size: 23px;
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .profile-section {
+    padding: 18px;
+  }
+
+}

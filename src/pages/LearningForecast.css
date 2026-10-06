@@ -1,0 +1,656 @@
+/* ================================
+   LEARNING FORECAST
+   MATCH STUDYTWIN APP STYLE
+================================ */
+
+.forecast-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 0 45px;
+  color: #20273a;
+}
+
+/* HEADER */
+
+.forecast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.forecast-header h1 {
+  margin: 5px 0 6px;
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.forecast-header p {
+  margin: 0;
+  color: #7c8392;
+  font-size: 13px;
+}
+
+.forecast-label {
+  color: #6875d9 !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.forecast-orb {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef1ff;
+  font-size: 28px;
+
+  box-shadow: 0 5px 18px rgba(75, 82, 150, 0.08);
+}
+
+
+/* ================================
+   MAIN FORECAST CARD
+================================ */
+
+.forecast-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 25px;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f7;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.045);
+}
+
+.forecast-hero-content {
+  max-width: 650px;
+}
+
+.forecast-badge {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #eef1ff;
+  color: #6875d9;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.forecast-hero h2 {
+  margin: 13px 0 7px;
+
+  font-size: 22px;
+  color: #242b3d;
+}
+
+.forecast-hero p {
+  margin: 0;
+
+  color: #7d8492;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* ================================
+   SCORE
+================================ */
+
+.forecast-score {
+  min-width: 135px;
+  text-align: center;
+}
+
+.score-ring {
+  width: 110px;
+  height: 110px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle,
+      #ffffff 57%,
+      transparent 58%
+    ),
+    conic-gradient(
+      #6875d9 0deg,
+      #8f79d7 300deg,
+      #edf0f7 300deg
+    );
+}
+
+.score-ring span {
+  font-size: 24px;
+  font-weight: 800;
+  color: #5661c8;
+}
+
+.forecast-score small {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #858b99;
+
+  font-size: 10px;
+}
+
+
+/* ================================
+   SECTIONS
+================================ */
+
+.forecast-section {
+  margin-top: 25px;
+}
+
+.forecast-section h2 {
+  margin: 0 0 13px;
+
+  font-size: 18px;
+  color: #252c3e;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ================================
+   GROWTH CARD
+================================ */
+
+.growth-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+
+  padding: 23px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  border: 1px solid #edf0f7;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.035);
+}
+
+.growth-side {
+  text-align: center;
+}
+
+.growth-side span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #858b99;
+
+  font-size: 10px;
+}
+
+.growth-side strong {
+  display: block;
+
+  font-size: 30px;
+
+  color: #606878;
+}
+
+.growth-side small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #a0a5b0;
+
+  font-size: 10px;
+}
+
+.growth-side.future strong {
+  color: #6875d9;
+}
+
+.growth-arrow {
+  font-size: 26px;
+  color: #9da2ae;
+}
+
+
+/* ================================
+   STAT CARDS
+================================ */
+
+.forecast-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  margin-top: 15px;
+}
+
+.forecast-card {
+  padding: 18px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #edf0f7;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.035);
+}
+
+.forecast-card-icon {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 21px;
+}
+
+.forecast-card small {
+  display: block;
+
+  color: #858b99;
+
+  font-size: 10px;
+}
+
+.forecast-card strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 24px;
+
+  color: #252c3e;
+}
+
+.forecast-card p {
+  margin: 3px 0 0;
+
+  color: #a0a5b0;
+
+  font-size: 9px;
+}
+
+
+/* ================================
+   TOPICS
+================================ */
+
+.forecast-topics {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.forecast-topic {
+  padding: 17px;
+
+  background: #ffffff;
+
+  border-radius: 17px;
+
+  border: 1px solid #edf0f7;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.03);
+}
+
+.forecast-topic-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.forecast-topic-top > div:first-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.forecast-topic-top strong {
+  font-size: 13px;
+}
+
+.forecast-topic-top span {
+  color: #858b99;
+
+  font-size: 9px;
+}
+
+.topic-prediction {
+  color: #9297a4;
+
+  font-size: 11px;
+}
+
+.topic-prediction strong {
+  color: #6875d9;
+}
+
+
+/* PROGRESS */
+
+.forecast-progress {
+  height: 7px;
+
+  margin-top: 12px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #edf0f6;
+}
+
+.current-progress {
+  height: 100%;
+
+  border-radius: 20px;
+
+  background: #6875d9;
+}
+
+.forecast-mini-text {
+  margin-top: 7px;
+
+  color: #9a9fab;
+
+  font-size: 9px;
+}
+
+
+/* ================================
+   OPPORTUNITY
+================================ */
+
+.forecast-risk {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin-top: 18px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: #fffaf1;
+
+  border: 1px solid #f5ecd9;
+}
+
+.risk-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #fff1d8;
+
+  font-size: 18px;
+}
+
+.forecast-risk span {
+  color: #a07842;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.forecast-risk h3 {
+  margin: 4px 0;
+
+  font-size: 15px;
+}
+
+.forecast-risk p {
+  margin: 0;
+
+  color: #8b806f;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* ================================
+   AI INSIGHT
+================================ */
+
+.forecast-ai {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin-top: 14px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: #f4f5ff;
+
+  border: 1px solid #e7e9ff;
+}
+
+.ai-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  font-size: 19px;
+}
+
+.forecast-ai span {
+  color: #6875d9;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.forecast-ai p {
+  margin: 5px 0 0;
+
+  color: #60677a;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.forecast-empty {
+  padding: 30px 20px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #edf0f7;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.035);
+}
+
+.forecast-empty div {
+  font-size: 36px;
+}
+
+.forecast-empty h3 {
+  margin: 10px 0 6px;
+
+  font-size: 15px;
+}
+
+.forecast-empty p {
+  max-width: 450px;
+
+  margin: auto;
+
+  color: #858b99;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   INFORMATION
+================================ */
+
+.forecast-info {
+  margin-top: 14px;
+
+  padding: 17px;
+
+  background: #ffffff;
+
+  border-radius: 17px;
+
+  border: 1px solid #edf0f7;
+}
+
+.forecast-info h3 {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+}
+
+.forecast-info p {
+  margin: 0;
+
+  color: #858b99;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .forecast-header h1 {
+    font-size: 22px;
+  }
+
+  .forecast-orb {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    font-size: 23px;
+  }
+
+  .forecast-hero {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 20px;
+  }
+
+  .forecast-score {
+    width: 100%;
+  }
+
+  .forecast-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-card {
+    gap: 20px;
+  }
+
+  .growth-side strong {
+    font-size: 25px;
+  }
+
+  .forecast-topic-top {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
